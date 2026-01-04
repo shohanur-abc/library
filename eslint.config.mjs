@@ -17,7 +17,7 @@ const eslintConfig = defineConfig([
   {
     rules: {
       "react-hooks/set-state-in-effect": "warn",
-      "eslintreact/no-unescaped-entities": "warn",
+      "react/no-unescaped-entities": "warn",
     },
   },
 ]);

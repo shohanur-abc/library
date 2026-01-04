@@ -9,15 +9,15 @@ interface PageProps {
 export default async function Page({ params }: PageProps) {
 
     const { slug } = (await params);
-    const [_uiLibrary, _category, _block, _variant, _version] = slug;
+    const [_uiLibrary, _category, _block, _variant, ] = slug;
+    const length = slug.length;
 
-    const uiLibrary = registry?.[_uiLibrary as keyof typeof registry];
-    const category = _category && uiLibrary?.filter(item => item.category === _category);
-    const block = _block && category && category?.filter((item) => item.block === _block);
-    const variant = _variant && block && block?.filter(item => item.variant === _variant);
-    const version = _version && variant ? [variant.find(item => item.version === _version)].filter(Boolean) as Block[] : undefined;
+    let blocks: Block[] = registry?.[_uiLibrary as keyof typeof registry];
+    if (length === 2)  blocks = blocks?.filter(item => item.category === _category);
+    if (length === 3)  blocks = blocks?.filter(item => item.block === _block);
+    if (length === 4)  blocks = blocks?.filter(item => item.variant === _variant);
+    if (length === 5)  blocks = [blocks.find(item => item.id === slug.join("/"))].filter(Boolean) as Block[];
 
-    const blocks: Block[] = [version, variant, block, category, uiLibrary].find(v =>  v && v.length > 0) || [];
         return (
         <main className="flex flex-col gap-8">
             {blocks.length > 0 ? (
