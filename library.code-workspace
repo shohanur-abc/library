@@ -1,0 +1,66 @@
+{
+    "folders": [
+        {
+            "name": "Root",
+            "path": "."
+        },
+        //app
+        {
+            "name": "App",
+            "path": "src/app"
+        },
+        {
+            "name": "API",
+            "path": "src/app/api"
+        },
+        {
+            "name": "Shadcn UI",
+            "path": "src/ui-library/shadcn"
+        },
+    ],
+    "settings": {
+        "files.exclude": {
+            "**/node_modules": true,
+            "**/.next": true,
+            "**/dist": true,
+            "**/.git": true,
+            "**/pnpm-lock.yaml": true,
+            "**/package-lock.json": true,
+            "**/yarn.lock": true,
+            // "**/.env.local": true,
+            "**/.env*.local": true,
+            "**/@radix-ui": true
+        },
+        "search.exclude": {
+            "**/@radix-ui": true,
+            "**/node_modules": true,
+            "**/.next": true,
+            "**/dist": true,
+            "**/pnpm-lock.yaml": true
+        },
+        "editor.defaultFormatter": "vscode.typescript-language-features",
+        "editor.formatOnSave": true,
+        "editor.tabSize": 4,
+        "[typescript]": {
+            "editor.defaultFormatter": "vscode.typescript-language-features"
+        },
+        "[typescriptreact]": {
+            "editor.defaultFormatter": "vscode.typescript-language-features"
+        },
+        "editor.fontSize": 16,
+        "editor.cursorSmoothCaretAnimation": "explicit",
+        "editor.cursorSurroundingLinesStyle": "all",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports.vscode-typescript-language-features": "explicit",
+            "quickfix.vscode-typescript-language-features": "explicit"
+        },
+        "typescript.preferences.autoImportFileExcludePatterns": [
+            "@radix-ui"
+        ],
+    },
+    "extensions": {
+        "recommendations": [
+            "bradlc.vscode-tailwindcss"
+        ]
+    }
+}
