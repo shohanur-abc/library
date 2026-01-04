@@ -4,7 +4,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "bun run script && next dev",
+    "dev": "next dev",
     "start": "next start",
     "script": "bash script/run.sh",
     "build": "next build",
@@ -12,7 +12,6 @@
     "type-check": "tsc --noEmit",
     "shadcn": "bunx --bun shadcn@latest ",
     "git-pull": "git pull origin main"
-
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
