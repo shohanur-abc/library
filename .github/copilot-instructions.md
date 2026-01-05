@@ -1,3 +1,28 @@
+# Verification Steps
+After every modification, ensure the following commands are executed to maintain code quality and functionality:
+
+1. **Lint the code**:  
+  ```bash
+  bun run lint
+  ```
+
+2. **Type-check the code**:  
+  ```bash
+  bun run type-check
+  ```
+
+3. **Run the development server**:  
+  ```bash
+  bun dev
+  ```
+
+4. **Build the project**:  
+  ```bash
+  bun build
+  ```
+
+---
+
 
 ## 🎨 UI/Component Rules
 - follow shadcn/ui design system and globalcss styles
