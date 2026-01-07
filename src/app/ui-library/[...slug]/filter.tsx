@@ -202,9 +202,7 @@ export function FilterSystem({ blocks, currentFilters, hideFilter = false }: Fil
                                     <Layers className="size-3" />
                                     <span>Categories</span>
                                     {selectedFilters.category.length > 0 && (
-                                        <Badge variant="secondary" className="ml-auto size-4 flex items-center justify-center p-0 text-[10px]">
-                                            {selectedFilters.category.length}
-                                        </Badge>
+                                        <span  className=" text-xs border border-muted rounded-full px-1">{selectedFilters.category.length}</span>
                                     )}
                                 </div>
                             }>
@@ -350,7 +348,7 @@ export function FilterSystem({ blocks, currentFilters, hideFilter = false }: Fil
                                     </div>
                                     <div className="ml-auto flex gap-1">
                                         {blocks.find(b => b.id === id)?.tags.slice(0, 3).map(tag => (
-                                            <Badge key={tag} variant="outline" className="text-[10px] h-4 px-1">
+                                            <Badge key={tag} variant="outline" className="ml-auto text-xs">
                                                 {tag}
                                             </Badge>
                                         ))}

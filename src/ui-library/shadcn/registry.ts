@@ -321,6 +321,17 @@ export const registry = [
         code: dynamic(() => import('@/ui-library/shadcn/utility/codeblock/prism/01')),
         source: async () => await getRawCode('src/ui-library/shadcn/utility/codeblock/prism/01.tsx'),
     },
+    {
+        uiLibrary: 'shadcn',
+        category: 'utility',
+        block: 'filter',
+        variant: 'searchbar',
+        version: '01',
+        id: 'shadcn-utility-filter-searchbar-01',
+        tags: [''],
+        code: dynamic(() => import('@/ui-library/shadcn/utility/filter/searchbar/01')),
+        source: async () => await getRawCode('src/ui-library/shadcn/utility/filter/searchbar/01.tsx'),
+    },
 ]
 
 export default registry;
