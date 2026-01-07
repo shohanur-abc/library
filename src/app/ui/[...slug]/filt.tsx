@@ -2,7 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandList, CommandSeparator } from "@/components/ui/command";
 import React, { Fragment } from "react";
 import { CommandItemWrapper } from "./client";
-import registry from "@/ui-library/registry";
+import registry from "@/ui/registry";
 import { Box, Grid3x3, Hash, Layers } from "lucide-react";
 
 export interface CommandGroupType {
@@ -63,7 +63,7 @@ function searcher(uiLibName: string) {
                 const label = v.split('/')[1];
                 return {
                     label: label,
-                    href: `/ui-library/${uiLibName}/${v}`,
+                    href: `/ui/${uiLibName}/${v}`,
                     count: uiLibrary.reduce((acc, item) => item.block === label ? acc + 1 : acc, 0).toString(),
                 }
             }),
@@ -74,7 +74,7 @@ function searcher(uiLibName: string) {
             items: [...new Set(uiLibrary.map(item => item.category))].map(v => {
                 return {
                     label: v,
-                    href: `/ui-library/${uiLibName}/${v}`,
+                    href: `/ui/${uiLibName}/${v}`,
                     count: uiLibrary.reduce((acc, item) => item.category === v ? acc + 1 : acc, 0).toString(),
                 }
             }),
@@ -86,7 +86,7 @@ function searcher(uiLibName: string) {
                 const label = v.split('/')[2];
                 return {
                     label: label,
-                    href: `/ui-library/${uiLibName}/${v}`,
+                    href: `/ui/${uiLibName}/${v}`,
                     count: uiLibrary.reduce((acc, item) => item.variant === label ? acc + 1 : acc, 0).toString(),
                 }
             }),
@@ -96,7 +96,7 @@ function searcher(uiLibName: string) {
             heading: "IDs",
             items: uiLibrary.flatMap(({ id, variant, block, category, version, tags }) => ({
                 label: id,
-                href: `/ui-library/${uiLibName}/${category}/${block}/${variant}/${version}`,
+                href: `/ui/${uiLibName}/${category}/${block}/${variant}/${version}`,
                 keywords: tags,
             })),
             icon: <Hash />,

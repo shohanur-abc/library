@@ -15,7 +15,7 @@
         },
         {
             "name": "Shadcn UI",
-            "path": "src/ui-library/shadcn"
+            "path": "src/ui/shadcn"
         },
     ],
     "settings": {

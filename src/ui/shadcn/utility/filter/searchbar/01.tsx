@@ -77,21 +77,21 @@ function CommandSearchDemo() {
                         items: [
                             {
                                 label: "layout",
-                                href: "/ui-library/shadcn/layout",
+                                href: "/ui/shadcn/layout",
                                 icon: <Calendar />,
                                 keywords: [],
                                 disabled: false,
                             },
                             {
                                 label: "Authentication",
-                                href: "/ui-library/shadcn/auth",
+                                href: "/ui/shadcn/auth",
                                 icon: <Smile />,
                                 keywords: [],
                                 disabled: false,
                             },
                             {
                                 label: "Utilities",
-                                href: "/ui-library/shadcn/utility",
+                                href: "/ui/shadcn/utility",
                                 icon: <Calculator />,
                                 keywords: [],
                                 disabled: true,
@@ -103,7 +103,7 @@ function CommandSearchDemo() {
                         items: [
                             {
                                 label: "Hero Sections",
-                                href: "/ui-library/shadcn/layout/hero",
+                                href: "/ui/shadcn/layout/hero",
                                 icon: <User />,
                                 keywords: [],
                                 shortcut: "⌘P",
@@ -111,7 +111,7 @@ function CommandSearchDemo() {
                             },
                             {
                                 label: "Navigation Bars",
-                                href: "/ui-library/shadcn/navigation/navbar",
+                                href: "/ui/shadcn/navigation/navbar",
                                 icon: <CreditCard />,
                                 keywords: ["nav", "menu", "header"],
                                 shortcut: "⌘B",
@@ -119,7 +119,7 @@ function CommandSearchDemo() {
                             },
                             {
                                 label: "Product Cards",
-                                href: "/ui-library/shadcn/card/product-card",
+                                href: "/ui/shadcn/card/product-card",
                                 icon: <Settings />,
                                 keywords: [],
                                 shortcut: "⌘S",
@@ -132,7 +132,7 @@ function CommandSearchDemo() {
                         items: [
                             {
                                 label: "CodeBlock",
-                                href: "/ui-library/shadcn/utility/codeblock/01",
+                                href: "/ui/shadcn/utility/codeblock/01",
                                 icon: <Home />,
                                 keywords: [],
                                 shortcut: "⌘H",
@@ -140,7 +140,7 @@ function CommandSearchDemo() {
                             },
                             {
                                 label: "Nice Hero",
-                                href: "/ui-library/shadcn/layout/hero/portfolio/01",
+                                href: "/ui/shadcn/layout/hero/portfolio/01",
                                 icon: <BarChart3 />,
                                 keywords: [],
                                 shortcut: "⌘D",

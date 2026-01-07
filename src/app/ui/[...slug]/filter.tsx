@@ -68,7 +68,7 @@ export function FilterSystem({ blocks, currentFilters, hideFilter = false }: Fil
 
     const navigateToFilter = (group: string, value: string) => {
         // Build the URL path based on filter type
-        let path = '/ui-library/shadcn'
+        let path = '/ui/shadcn'
 
         if (group === 'category') {
             path += `/${value}`
@@ -116,7 +116,7 @@ export function FilterSystem({ blocks, currentFilters, hideFilter = false }: Fil
     }
 
     const navigateToBlock = (blockId: string) => {
-        router.push(`/ui-library/${blockId}`)
+        router.push(`/ui/${blockId}`)
         setOpen(false)
     }
 
@@ -202,7 +202,7 @@ export function FilterSystem({ blocks, currentFilters, hideFilter = false }: Fil
                                     <Layers className="size-3" />
                                     <span>Categories</span>
                                     {selectedFilters.category.length > 0 && (
-                                        <span  className=" text-xs border border-muted rounded-full px-1">{selectedFilters.category.length}</span>
+                                        <span className=" text-xs border border-muted rounded-full px-1">{selectedFilters.category.length}</span>
                                     )}
                                 </div>
                             }>

@@ -1,4 +1,4 @@
-import { registry as shadcn } from "@/ui-library/shadcn/registry";
+import { registry as shadcn } from "@/ui/shadcn/registry";
 import { NextResponse } from "next/server";
 
 const registry = {

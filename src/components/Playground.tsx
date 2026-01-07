@@ -101,7 +101,7 @@ export const Playground = ({ name, id, order, description, tags = [], uiLibrary,
                     <CopyButton copied={copied} handleCopyCode={handleCopyCode} />
 
                     <Button variant="ghost" size="sm" className="h-7 w-7 p-0">
-                        <Link href={`/ui-library/${id.split('-').join('/')}`} target="_blank"><ExternalLink className="size-3.5" /></Link>
+                        <Link href={`/ui/${id.split('-').join('/')}`} target="_blank"><ExternalLink className="size-3.5" /></Link>
                     </Button>
                 </div>
             </div>

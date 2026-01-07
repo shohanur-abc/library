@@ -1,10 +1,10 @@
 import capitalizeWords from "@/utils/capitalizeWords";
 import { getFilePaths } from "./getFilePaths";
-import { registry } from "@/ui-library/shadcn/registry";
+import { registry } from "@/ui/shadcn/registry";
 import fs from "fs/promises";
 
 (async () => {
-    const tsxs = await getFilePaths('src/ui-library/shadcn')
+    const tsxs = await getFilePaths('src/ui/shadcn')
         .then(allPaths => allPaths.filter(fp => fp.endsWith('.tsx')))
         .then(tsxPaths => tsxPaths.map(fp => fp.replace('.tsx', '').replace('src/', '')));
     console.dir(tsxs);
@@ -34,7 +34,7 @@ ${tsxs.map((filePath) => {
 export default registry;
 export type Block = (typeof registry)[number];
 `;
-    await fs.writeFile('src/ui-library/shadcn/registry.ts', registry$shadcn);
+    await fs.writeFile('src/ui/shadcn/registry.ts', registry$shadcn);
     console.log('Registry file updated successfully.');
 })()
 

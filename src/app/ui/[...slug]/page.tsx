@@ -1,5 +1,5 @@
-import { registry } from "@/ui-library/registry";
-import { Block } from "@/ui-library/shadcn/registry";
+import { registry } from "@/ui/registry";
+import { Block } from "@/ui/shadcn/registry";
 import { Playground } from "@/components/Playground";
 import { CommandSearch } from "./filt";
 

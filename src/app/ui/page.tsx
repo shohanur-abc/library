@@ -7,7 +7,7 @@ import shadcnImg from '@/assets/shadcn.png'
 import herouiImg from '@/assets/heroui.png'
 import chakrauiImg from '@/assets/chakraui.png'
 import muiImg from '@/assets/mui.png'
-import shadcn from '@/ui-library/shadcn/registry'
+import shadcn from '@/ui/shadcn/registry'
 import Link from 'next/link'
 
 const featureCards = [
@@ -17,7 +17,7 @@ const featureCards = [
         description: 'Elegant, accessible, and customizable components for modern UIs.',
         color: 'from-blue-500 to-cyan-500',
         stats: shadcn.length,
-        link: 'ui-library/shadcn'
+        link: 'ui/shadcn'
     },
     {
         icon: herouiImg,
@@ -25,7 +25,7 @@ const featureCards = [
         description: 'Beautifully designed components with seamless integration.',
         color: 'from-purple-500 to-pink-500',
         stats: '∞',
-        link: 'ui-library/heroui'
+        link: 'ui/heroui'
     },
     {
         icon: chakrauiImg,
@@ -33,7 +33,7 @@ const featureCards = [
         description: 'Modular and accessible React components for your projects.',
         color: 'from-amber-500 to-orange-500',
         stats: '100ms',
-        link: 'ui-library/chakra-ui'
+        link: 'ui/chakra-ui'
     },
     {
         icon: muiImg,
@@ -41,7 +41,7 @@ const featureCards = [
         description: 'React components that implement Google’s Material Design.',
         color: 'from-emerald-500 to-green-500',
         stats: 'AA',
-        link: 'ui-library/material-ui'
+        link: 'ui/material-ui'
     },
 ]
 
