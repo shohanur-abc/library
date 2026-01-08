@@ -3,14 +3,14 @@ import { getRawCode } from "@/utils/rawCode";
 
 export const registry = [
     {
-        uiLibrary: 'shadcn',
+        lib: 'shadcn',
         category: 'layout',
         block: 'hero',
-        variant: 'agency',
+        website: 'agency',
         version: '01',
         id: 'shadcn-layout-hero-agency-01',
-        tags: ['badge', 'button', 'card', 'stats'],
-        code: dynamic(() => import('@/ui/shadcn/layout/hero/agency/01')),
+        keywords: ['badge', 'button', 'card', 'stats'],
+        code: dynamic(() => import('@/ui/shadcn/landing/hero/agency/01')),
         source: async () => await getRawCode('src/ui/shadcn/layout/hero/agency/01.tsx'),
     },
     {
@@ -21,7 +21,7 @@ export const registry = [
         version: '01',
         id: 'shadcn-layout-hero-blog-01',
         tags: ['avatar', 'badge', 'button', 'card', 'image'],
-        code: dynamic(() => import('@/ui/shadcn/layout/hero/blog/01')),
+        code: dynamic(() => import('@/ui/shadcn/landing/hero/blog/01')),
         source: async () => await getRawCode('src/ui/shadcn/layout/hero/blog/01.tsx'),
     },
     {
@@ -32,7 +32,7 @@ export const registry = [
         version: '02',
         id: 'shadcn-layout-hero-blog-02',
         tags: ['avatar', 'badge', 'button', 'card'],
-        code: dynamic(() => import('@/ui/shadcn/layout/hero/blog/02')),
+        code: dynamic(() => import('@/ui/shadcn/landing/hero/blog/02')),
         source: async () => await getRawCode('src/ui/shadcn/layout/hero/blog/02.tsx'),
     },
     {
@@ -43,7 +43,7 @@ export const registry = [
         version: '03',
         id: 'shadcn-layout-hero-blog-03',
         tags: ['avatar', 'badge', 'button', 'card', 'input', 'list', 'image'],
-        code: dynamic(() => import('@/ui/shadcn/layout/hero/blog/03')),
+        code: dynamic(() => import('@/ui/shadcn/landing/hero/blog/03')),
         source: async () => await getRawCode('src/ui/shadcn/layout/hero/blog/03.tsx'),
     },
     {
@@ -54,7 +54,7 @@ export const registry = [
         version: '04',
         id: 'shadcn-layout-hero-blog-04',
         tags: ['badge', 'button', 'input', 'stats'],
-        code: dynamic(() => import('@/ui/shadcn/layout/hero/blog/04')),
+        code: dynamic(() => import('@/ui/shadcn/landing/hero/blog/04')),
         source: async () => await getRawCode('src/ui/shadcn/layout/hero/blog/04.tsx'),
     },
     {
@@ -65,7 +65,7 @@ export const registry = [
         version: '05',
         id: 'shadcn-layout-hero-blog-05',
         tags: ['avatar', 'badge', 'button', 'carousel', 'image'],
-        code: dynamic(() => import('@/ui/shadcn/layout/hero/blog/05')),
+        code: dynamic(() => import('@/ui/shadcn/landing/hero/blog/05')),
         source: async () => await getRawCode('src/ui/shadcn/layout/hero/blog/05.tsx'),
     },
     {
@@ -76,7 +76,7 @@ export const registry = [
         version: '06',
         id: 'shadcn-layout-hero-blog-06',
         tags: ['avatar', 'badge', 'button', 'card', 'image'],
-        code: dynamic(() => import('@/ui/shadcn/layout/hero/blog/06')),
+        code: dynamic(() => import('@/ui/shadcn/landing/hero/blog/06')),
         source: async () => await getRawCode('src/ui/shadcn/layout/hero/blog/06.tsx'),
     },
     {
@@ -87,7 +87,7 @@ export const registry = [
         version: '07',
         id: 'shadcn-layout-hero-blog-07',
         tags: ['badge', 'button', 'card', 'stats'],
-        code: dynamic(() => import('@/ui/shadcn/layout/hero/blog/07')),
+        code: dynamic(() => import('@/ui/shadcn/landing/hero/blog/07')),
         source: async () => await getRawCode('src/ui/shadcn/layout/hero/blog/07.tsx'),
     },
     {
@@ -98,7 +98,7 @@ export const registry = [
         version: '01',
         id: 'shadcn-layout-hero-business-01',
         tags: ['badge', 'button', 'card', 'list', 'stats'],
-        code: dynamic(() => import('@/ui/shadcn/layout/hero/business/01')),
+        code: dynamic(() => import('@/ui/shadcn/landing/hero/business/01')),
         source: async () => await getRawCode('src/ui/shadcn/layout/hero/business/01.tsx'),
     },
     {
@@ -109,7 +109,7 @@ export const registry = [
         version: '01',
         id: 'shadcn-layout-hero-ecommerce-01',
         tags: ['badge', 'button', 'card', 'image'],
-        code: dynamic(() => import('@/ui/shadcn/layout/hero/ecommerce/01')),
+        code: dynamic(() => import('@/ui/shadcn/landing/hero/ecommerce/01')),
         source: async () => await getRawCode('src/ui/shadcn/layout/hero/ecommerce/01.tsx'),
     },
     {
@@ -120,7 +120,7 @@ export const registry = [
         version: '01',
         id: 'shadcn-layout-hero-education-01',
         tags: ['avatar', 'badge', 'button', 'card', 'image', 'stats'],
-        code: dynamic(() => import('@/ui/shadcn/layout/hero/education/01')),
+        code: dynamic(() => import('@/ui/shadcn/landing/hero/education/01')),
         source: async () => await getRawCode('src/ui/shadcn/layout/hero/education/01.tsx'),
     },
     {
@@ -131,7 +131,7 @@ export const registry = [
         version: '01',
         id: 'shadcn-layout-hero-landing-01',
         tags: ['avatar', 'badge', 'button', 'input'],
-        code: dynamic(() => import('@/ui/shadcn/layout/hero/landing/01')),
+        code: dynamic(() => import('@/ui/shadcn/landing/hero/landing/01')),
         source: async () => await getRawCode('src/ui/shadcn/layout/hero/landing/01.tsx'),
     },
     {
@@ -142,7 +142,7 @@ export const registry = [
         version: '02',
         id: 'shadcn-layout-hero-landing-02',
         tags: ['avatar', 'badge', 'button', 'input', 'list'],
-        code: dynamic(() => import('@/ui/shadcn/layout/hero/landing/02')),
+        code: dynamic(() => import('@/ui/shadcn/landing/hero/landing/02')),
         source: async () => await getRawCode('src/ui/shadcn/layout/hero/landing/02.tsx'),
     },
     {
@@ -153,7 +153,7 @@ export const registry = [
         version: '01',
         id: 'shadcn-layout-hero-news-01',
         tags: ['badge', 'button', 'card', 'image', 'list'],
-        code: dynamic(() => import('@/ui/shadcn/layout/hero/news/01')),
+        code: dynamic(() => import('@/ui/shadcn/landing/hero/news/01')),
         source: async () => await getRawCode('src/ui/shadcn/layout/hero/news/01.tsx'),
     },
     {
@@ -164,7 +164,7 @@ export const registry = [
         version: '02',
         id: 'shadcn-layout-hero-news-02',
         tags: ['avatar', 'badge', 'button', 'card', 'image', 'stats'],
-        code: dynamic(() => import('@/ui/shadcn/layout/hero/news/02')),
+        code: dynamic(() => import('@/ui/shadcn/landing/hero/news/02')),
         source: async () => await getRawCode('src/ui/shadcn/layout/hero/news/02.tsx'),
     },
     {
@@ -175,7 +175,7 @@ export const registry = [
         version: '01',
         id: 'shadcn-layout-hero-portfolio-01',
         tags: ['badge', 'button', 'image'],
-        code: dynamic(() => import('@/ui/shadcn/layout/hero/portfolio/01')),
+        code: dynamic(() => import('@/ui/shadcn/landing/hero/portfolio/01')),
         source: async () => await getRawCode('src/ui/shadcn/layout/hero/portfolio/01.tsx'),
     },
     {
@@ -186,7 +186,7 @@ export const registry = [
         version: '02',
         id: 'shadcn-layout-hero-portfolio-02',
         tags: ['avatar', 'badge', 'button'],
-        code: dynamic(() => import('@/ui/shadcn/layout/hero/portfolio/02')),
+        code: dynamic(() => import('@/ui/shadcn/landing/hero/portfolio/02')),
         source: async () => await getRawCode('src/ui/shadcn/layout/hero/portfolio/02.tsx'),
     },
     {
@@ -197,7 +197,7 @@ export const registry = [
         version: '03',
         id: 'shadcn-layout-hero-portfolio-03',
         tags: ['avatar', 'badge', 'button'],
-        code: dynamic(() => import('@/ui/shadcn/layout/hero/portfolio/03')),
+        code: dynamic(() => import('@/ui/shadcn/landing/hero/portfolio/03')),
         source: async () => await getRawCode('src/ui/shadcn/layout/hero/portfolio/03.tsx'),
     },
     {
@@ -208,7 +208,7 @@ export const registry = [
         version: '01',
         id: 'shadcn-layout-hero-restaurant-01',
         tags: ['badge', 'button', 'card', 'image', 'stats'],
-        code: dynamic(() => import('@/ui/shadcn/layout/hero/restaurant/01')),
+        code: dynamic(() => import('@/ui/shadcn/landing/hero/restaurant/01')),
         source: async () => await getRawCode('src/ui/shadcn/layout/hero/restaurant/01.tsx'),
     },
     {
@@ -219,7 +219,7 @@ export const registry = [
         version: '01',
         id: 'shadcn-layout-hero-saas-01',
         tags: ['avatar', 'badge', 'button', 'card'],
-        code: dynamic(() => import('@/ui/shadcn/layout/hero/saas/01')),
+        code: dynamic(() => import('@/ui/shadcn/landing/hero/saas/01')),
         source: async () => await getRawCode('src/ui/shadcn/layout/hero/saas/01.tsx'),
     },
     {
@@ -230,7 +230,7 @@ export const registry = [
         version: '01',
         id: 'shadcn-layout-hero-startup-01',
         tags: ['avatar', 'badge', 'button', 'input'],
-        code: dynamic(() => import('@/ui/shadcn/layout/hero/startup/01')),
+        code: dynamic(() => import('@/ui/shadcn/landing/hero/startup/01')),
         source: async () => await getRawCode('src/ui/shadcn/layout/hero/startup/01.tsx'),
     },
     {
@@ -241,7 +241,7 @@ export const registry = [
         version: '02',
         id: 'shadcn-layout-hero-startup-02',
         tags: ['badge', 'button', 'image', 'list'],
-        code: dynamic(() => import('@/ui/shadcn/layout/hero/startup/02')),
+        code: dynamic(() => import('@/ui/shadcn/landing/hero/startup/02')),
         source: async () => await getRawCode('src/ui/shadcn/layout/hero/startup/02.tsx'),
     },
     {
@@ -252,7 +252,7 @@ export const registry = [
         version: '03',
         id: 'shadcn-layout-hero-startup-03',
         tags: ['badge', 'button', 'card'],
-        code: dynamic(() => import('@/ui/shadcn/layout/hero/startup/03')),
+        code: dynamic(() => import('@/ui/shadcn/landing/hero/startup/03')),
         source: async () => await getRawCode('src/ui/shadcn/layout/hero/startup/03.tsx'),
     },
     {
@@ -263,7 +263,7 @@ export const registry = [
         version: '04',
         id: 'shadcn-layout-hero-startup-04',
         tags: ['badge', 'button', 'stats'],
-        code: dynamic(() => import('@/ui/shadcn/layout/hero/startup/04')),
+        code: dynamic(() => import('@/ui/shadcn/landing/hero/startup/04')),
         source: async () => await getRawCode('src/ui/shadcn/layout/hero/startup/04.tsx'),
     },
     {
@@ -274,7 +274,7 @@ export const registry = [
         version: '05',
         id: 'shadcn-layout-hero-startup-05',
         tags: ['badge', 'button', 'card', 'stats'],
-        code: dynamic(() => import('@/ui/shadcn/layout/hero/startup/05')),
+        code: dynamic(() => import('@/ui/shadcn/landing/hero/startup/05')),
         source: async () => await getRawCode('src/ui/shadcn/layout/hero/startup/05.tsx'),
     },
     {

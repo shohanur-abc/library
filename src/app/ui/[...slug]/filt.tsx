@@ -82,19 +82,19 @@ function searcher(uiLibName: string) {
         },
         {
             heading: "Variants",
-            items: [...new Set(uiLibrary.map(_ => `${_.category}/${_.block}/${_.variant}`))].map(v => {
+            items: [...new Set(uiLibrary.map(_ => `${_.category}/${_.block}/${_.website}`))].map(v => {
                 const label = v.split('/')[2];
                 return {
                     label: label,
                     href: `/ui/${uiLibName}/${v}`,
-                    count: uiLibrary.reduce((acc, item) => item.variant === label ? acc + 1 : acc, 0).toString(),
+                    count: uiLibrary.reduce((acc, item) => item.website === label ? acc + 1 : acc, 0).toString(),
                 }
             }),
             icon: <Grid3x3 />,
         },
         {
             heading: "IDs",
-            items: uiLibrary.flatMap(({ id, variant, block, category, version, tags }) => ({
+            items: uiLibrary.flatMap(({ id, website: variant, block, category, version, keywords: tags }) => ({
                 label: id,
                 href: `/ui/${uiLibName}/${category}/${block}/${variant}/${version}`,
                 keywords: tags,

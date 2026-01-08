@@ -16,7 +16,7 @@ export default async function Page({ params }: PageProps) {
     let blocks: Block[] = registry?.[_uiLibrary as keyof typeof registry];
     if (length === 2) blocks = blocks?.filter(item => item.category === _category);
     if (length === 3) blocks = blocks?.filter(item => item.block === _block);
-    if (length === 4) blocks = blocks?.filter(item => item.variant === _variant);
+    if (length === 4) blocks = blocks?.filter(item => item.website === _variant);
     if (length === 5) blocks = [blocks.find(item => item.id === slug.join("-"))].filter(Boolean) as Block[];
 
 
@@ -28,11 +28,11 @@ export default async function Page({ params }: PageProps) {
                     blocks.map(block => (
                         <Playground
                             key={block.id}
-                            name={block.variant}
+                            name={block.website}
                             id={block.id}
                             order={block.version}
                             category={block.category}
-                            tags={block.tags}
+                            tags={block.keywords}
                             Preview={<block.code />}
                         />
                     ))

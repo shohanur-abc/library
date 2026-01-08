@@ -25,7 +25,7 @@ ${tsxs.map((filePath) => {
         variant: '${parts[3]}',
         version: '${parts[4]}',
         id: '${id}',
-        tags: [${(currBlock?.tags || ['']).map((s) => `'${s}'`).join(', ')}],
+        tags: [${(currBlock?.keywords || ['']).map((s) => `'${s}'`).join(', ')}],
         code: dynamic(() => import('@/${filePath}')),
         source: async () => await getRawCode('src/${filePath}.tsx'),
     },`;
